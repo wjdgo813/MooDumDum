@@ -299,8 +299,6 @@
 		BAD0E579203E955E00D91725 /* CategoryDetailList */ = {
 			isa = PBXGroup;
 			children = (
-				BAD0E57C203E957C00D91725 /* Model */,
-				BAD0E57B203E957100D91725 /* ViewModel */,
 				BAD0E57A203E956A00D91725 /* View */,
 			);
 			path = CategoryDetailList;
@@ -312,20 +310,6 @@
 				BAD0E57D203E978F00D91725 /* MDCategoryDetailViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		BAD0E57B203E957100D91725 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		BAD0E57C203E957C00D91725 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BADC6EDD20234B5500DC9181 = {
