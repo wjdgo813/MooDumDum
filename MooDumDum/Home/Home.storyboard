@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card View Controller-->
+        <scene sceneID="aGr-A2-olw">
+            <objects>
+                <viewController storyboardIdentifier="MDCardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gj1-NY-hRk" customClass="MDCardViewController" customModule="MooDumDum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6N-cm-DMH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onE-JC-azz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.25358500029999997" blue="0.33199943910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INw-28-IdZ">
+                                <rect key="frame" x="136" y="609" width="104" height="58"/>
+                                <state key="normal" image="plusBtnBl">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lyg-mb-enF" kind="show" id="mgY-Ub-2ae"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p73-wg-ed6" firstAttribute="bottom" secondItem="onE-JC-azz" secondAttribute="bottom" id="18M-4T-Zup"/>
+                            <constraint firstItem="INw-28-IdZ" firstAttribute="centerX" secondItem="S6N-cm-DMH" secondAttribute="centerX" id="1iZ-7p-DZa"/>
+                            <constraint firstItem="onE-JC-azz" firstAttribute="leading" secondItem="S6N-cm-DMH" secondAttribute="leading" id="40l-If-fOg"/>
+                            <constraint firstItem="p73-wg-ed6" firstAttribute="trailing" secondItem="onE-JC-azz" secondAttribute="trailing" id="6IF-sN-Pac"/>
+                            <constraint firstItem="onE-JC-azz" firstAttribute="top" secondItem="S6N-cm-DMH" secondAttribute="top" id="dIl-pe-rkQ"/>
+                            <constraint firstItem="p73-wg-ed6" firstAttribute="bottom" secondItem="INw-28-IdZ" secondAttribute="bottom" id="w5N-kx-V3N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p73-wg-ed6"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="onE-JC-azz" id="kZT-Rx-meT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orU-KO-F2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="53"/>
+        </scene>
+        <!--MD_WriteViewController-->
+        <scene sceneID="4bh-hd-Q46">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MD_WriteViewController" id="Lyg-mb-enF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cci-52-lbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plusBtnBl" width="104" height="58"/>
+    </resources>
+</document>
